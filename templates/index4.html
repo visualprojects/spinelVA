@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link id="favicon" rel="shortcut icon" href="static/assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/d3"></script>
+    <script src="https://unpkg.com/d3fc"></script>
+    <title>SpinelVA</title>
+    <link rel="shortcut icon" href="static/favicon.ico">
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;html{font-size:70%;overflow-x:hidden;scroll-behavior:smooth;}body{background:#fff;}html::-webkit-scrollbar{width:.8rem;}html::-webkit-scrollbar-track{background:#e9eaec;}html::-webkit-scrollbar-thumb{background:#000;}a{color:#ccc;}@media (max-width:450px){
+        html {
+            font-size: 55%
+        }
+
+        body {
+            padding-right: 0
+        }
+        }
+
+        #scroll-top {
+            background: #485058;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem 1.5rem;
+            position: fixed;
+            right: 2rem;
+            top: -140%;
+            transition: 1s linear;
+            z-index: 1000
+        }
+    </style>
+    <link href="static/bundle.c3edc.css" rel="stylesheet" media="only x" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="static/bundle.c3edc.css">
+    </noscript>
+</head>
+
+<body oncontextmenu="return false">
+    <script crossorigin="anonymous" src="static/bundle.9f1eb.esm.js" type="module"></script>
+    <script nomodule="" src="/polyfills.03377.js"></script>
+    <script nomodule="" defer="defer" src="static/bundle.fa6e2.js"></script><a href="#dashboard" aria-label="ScrollTop"
+        class="fas fa-angle-up" id="scroll-top"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+        integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+        integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="static/assets/js/underscore-min.js"></script>
+    <script src="static/assets/js/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+    <script src="static/assets/js/d3-hexbin.v0.2.min.js"></script>
+    <script src="static/assets/js/d3-lasso.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.106.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/scatter-gl@0.0.1/lib/scatter-gl.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="static/script.js"></script>
+</body>
+
+</html>
